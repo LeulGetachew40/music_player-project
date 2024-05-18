@@ -1,0 +1,30 @@
+[
+  {
+    "username": "John",
+    "password": "john123",
+    "musicInterests": [
+      "6649036a54bfb303345b5660",
+      "6649036a54bfb303345b5661",
+      "6649036a54bfb303345b5662"
+    ]
+  },
+  {
+    "username": "Mike",
+    "password": "mike123",
+    "musicInterests": [
+      "6649036a54bfb303345b5665",
+      "6649036a54bfb303345b5666",
+      "6649036a54bfb303345b5667",
+      "6649036a54bfb303345b5668"
+    ]
+  },
+  {
+    "username": "Robert",
+    "password": "robert123",
+    "musicInterests": [
+      "6649036a54bfb303345b5669",
+      "6649036a54bfb303345b566a",
+      "6649036a54bfb303345b566b"
+    ]
+  }
+]

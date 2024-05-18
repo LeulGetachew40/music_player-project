@@ -7,6 +7,8 @@ html(lang="en")
         link(rel="stylesheet" href='/css/styles.css')
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link( rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css")
+        script(src='/js/index.js' defer)
     body
         include _loggedInNav.pug
 
@@ -74,3 +76,21 @@ html(lang="en")
                             Add
                         button.
                             Remove
+        div(class="container")
+            h2(id="music-title").
+                Hello
+            h3(id="music-artist").
+                Adele
+
+            div(class="player-progress" id="player-progress")
+                div(class="progress" id="progress")
+                div(class="music-duration")
+                    span(id="current-time").
+                        0:00
+                    span(id="duration").
+                        0:00
+
+            div(class="player-controls")
+                i(class="fa-solid fa-backward" title="Previous" id="prev")
+                i(class="fa-solid fa-play play-button" title="Play" id="play")
+                i(class="fa-solid fa-forward" title="Next" id="next")

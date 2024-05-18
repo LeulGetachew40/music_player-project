@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5660"
+  },
+  "title": "Man in the Mirror",
+  "artist": "Michael Jackson",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5661"
+  },
+  "title": "Georgia on my mind",
+  "artist": "Ray Charles",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5662"
+  },
+  "title": "La Vie en Rose",
+  "artist": "Louis Armstrong",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5665"
+  },
+  "title": "Can't Help Falling In Love",
+  "artist": "Elvis Presley",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5666"
+  },
+  "title": "Sweet Caroline",
+  "artist": "Neil Diamond",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5667"
+  },
+  "title": "Hurt",
+  "artist": "Johnny Cash",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5668"
+  },
+  "title": "Save Me",
+  "artist": "Jelly Roll",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5669"
+  },
+  "title": "Always Forever",
+  "artist": "Cults",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b566a"
+  },
+  "title": "Pope is a Rockstar",
+  "artist": "Sales",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b566b"
+  },
+  "title": "Mirrors",
+  "artist": "Justin Timberlake",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b566c"
+  },
+  "title": "I Just Called to Say I Love You",
+  "artist": "Stevie Wonder",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b566d"
+  },
+  "title": "Against All Odds",
+  "artist": "2Pac",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b566e"
+  },
+  "title": "Mama Said Knock You Out",
+  "artist": "LL Cool J",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5663"
+  },
+  "title": "Rick Astley",
+  "artist": "Never Gonna Give You Up",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6649036a54bfb303345b5664"
+  },
+  "title": "Yesterday",
+  "artist": "The Beatles",
+  "datePublished": {
+    "$date": "1999-08-19T00:00:00.000Z"
+  },
+  "address": "./../songs",
+  "__v": 0
+}]

@@ -1,20 +1,18 @@
 const AppError = require("../utils/apiError.js");
 const User = require("./../models/usersModel.js");
 const catchAsync = require("./../utils/catchAsync.js");
-const jwt = require("jsonwebtoken");
-const { promisify } = require("util");
-
 const login = catchAsync(async (req, res, next) => {
   const { username, password } = req.body;
+  console.log(username, password);
   if (!username || !password) {
     return next(new AppError(400, "Please provide your username and password"));
   }
   const user = await User.findOne({ username });
-  if (user.password !== password) {
-    return next(new AppError(400, "Invalid username or password"));
-  }
   if (!user) {
     return next(new AppError(404, "User not Found"));
+  }
+  if (user.password !== password) {
+    return next(new AppError(400, "Invalid username or password"));
   }
 
   req.session.user = user;

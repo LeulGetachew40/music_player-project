@@ -6,6 +6,8 @@ const authController = require("./../controllers/authControllers.js");
 userRouter.get("/signup", usersControllers.createUser);
 userRouter.post("/login", authController.login);
 userRouter.get("/logout", authController.logout);
+userRouter.get("/all", usersControllers.getAllUsers);
+
 userRouter.get("/", (req, res, next) => {
   console.log(req.session.user);
   if (!req.session.user) {
