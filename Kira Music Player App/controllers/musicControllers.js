@@ -1,5 +1,6 @@
-function musicHomePage(req, res, next) {
-  res.status(200).render("base");
-}
+const Music = require("./../models/musicModel.js");
+const catchAsync = require("./../utils/catchAsync.js");
 
-module.exports = { musicHomePage };
+const addMusic = catchAsync(async (req, res, next) => {});
+
+const deleteMusic = catchAsync(async (req, res, next) => {});

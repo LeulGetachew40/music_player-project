@@ -1,12 +1,17 @@
+const catchAsync = require("../utils/catchAsync.js");
 const User = require("./../models/usersModel.js");
-async function createUser(req, res, next) {
+const createUser = catchAsync(async function (req, res, next) {
   const newUser = await User.create({
     username: req.body.username,
     password: req.body.password,
   });
   res.status(201).json({ user: newUser });
-}
-
+});
+const getHomePage = catchAsync(async function (req, res, next) {
+  console.log(req.user);
+  res.status(200).render("profile", { user: req.user });
+});
 module.exports = {
   createUser,
+  getHomePage,
 };

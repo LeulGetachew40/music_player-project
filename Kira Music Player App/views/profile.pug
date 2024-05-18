@@ -4,11 +4,15 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Music Player
-        link(rel="stylesheet" href='./../css/styles.css')
+        link(rel="stylesheet" href='/css/styles.css')
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link( rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     body
-        include _nav.pug
+        include _loggedInNav.pug
 
+        p.welcome= `Hello! ${user.username}`
         p.welcome.
-            Welcome to Music Website
+            Songs You Might Be Interested In
+        
+        table
+            

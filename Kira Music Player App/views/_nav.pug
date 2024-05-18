@@ -1,9 +1,9 @@
 nav
-    img.logo(src="logo.png" alt="Logo")
-    form.login(action='./api/v1/users/login' method='post')
+    img.logo(src="/img/music-logo.png" alt="Logo")
+    form.login(action='/api/v1/users/login' method='post')
         - const input1Classes = ["login__input","login__input--user"]
             input(type="text" name = "username" placeholder="username" class=input1Classes)
         - const input2Classes = ["login__input", "login__input--pin"]
             input(type="password" name="password" placeholder="password" class=input2Classes)
-            button#loginButton.
+            button#login__btn.
                 Log in

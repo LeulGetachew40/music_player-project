@@ -26,27 +26,20 @@ const login = catchAsync(async (req, res, next) => {
   // signJwt(user, req);
 
   req.session.user = user;
+  console.log(req.session.user);
   req.session.isAuth = true;
-  res.status(200).redirect("/");
+  res.status(200).redirect(`./${user.username}`);
 });
 
 const protectRoute = catchAsync(async (req, res, next) => {
-  let payload;
-  console.log(req.session.sessionId);
-  if (req.session.sessionId) {
-    payload = await promisify(jwt.verify)(
-      req.session.sessionId,
-      process.env.JWT_SECRET
-    );
+  let accessingUser;
+  if (req.session.user) {
+    accessingUser = await User.findOne({
+      username: req.session.user.username,
+    });
   }
-  const accessingUser = await User.findOne({ _id: payload.id });
   if (!accessingUser) {
-    return next(
-      new AppError(
-        401,
-        "The user belonging to this token doesn't exist anymore"
-      )
-    );
+    return next(new AppError(401, "User is logged out"));
   }
   req.user = accessingUser;
   next();
@@ -54,7 +47,7 @@ const protectRoute = catchAsync(async (req, res, next) => {
 
 const logout = catchAsync(async (req, res) => {
   req.session.destroy();
-  res.redirect("/login");
+  res.redirect("/");
 });
 
 module.exports = { login, protectRoute, logout };
