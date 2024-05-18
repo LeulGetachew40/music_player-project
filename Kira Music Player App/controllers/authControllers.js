@@ -4,12 +4,6 @@ const catchAsync = require("./../utils/catchAsync.js");
 const jwt = require("jsonwebtoken");
 const { promisify } = require("util");
 
-// const signJwt = function (user, req) {
-//   req.session.sessionId = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
-//     expiresIn: "7d",
-//   });
-// };
-
 const login = catchAsync(async (req, res, next) => {
   const { username, password } = req.body;
   if (!username || !password) {
@@ -22,8 +16,6 @@ const login = catchAsync(async (req, res, next) => {
   if (!user) {
     return next(new AppError(404, "User not Found"));
   }
-
-  // signJwt(user, req);
 
   req.session.user = user;
   console.log(req.session.user);

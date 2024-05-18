@@ -47,3 +47,13 @@ nav {
 #login__btn:focus {
   color: #777;
 }
+
+.music__interest {
+  padding: 40px;
+}
+.music__interest__header {
+  padding: 40px;
+}
+.music__interest__body {
+  padding: 20px;
+}

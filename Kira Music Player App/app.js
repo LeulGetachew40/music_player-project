@@ -10,7 +10,7 @@ const session = require("express-session");
 app.use(
   session({
     secret: "this-app-has-a-deep-secret",
-    cookie: { maxAge: 3600000, secure: false, sameSite: "strict" },
+    cookie: { maxAge: 900000000, secure: false, sameSite: "strict" },
     saveUninitialized: true,
     resave: false,
     genid: function (req) {
@@ -39,8 +39,11 @@ app.get("/", (request, response, next) => {
     response.redirect("./api/v1/users");
   }
 });
+
 const userRoutes = require("./routes/userRoutes.js");
 app.use("/api/v1/users", userRoutes);
+const musicRoutes = require("./routes/musicRoutes.js");
+app.use("/api/v1/music", musicRoutes);
 
 app.all("*", (req, res, next) => {
   return next(

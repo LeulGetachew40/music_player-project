@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const musicSchema = new mongoose.Schema({
   title: String,
-  datePublished: Date,
+  artist: String,
+  datePublished: { type: Date },
   address: String,
 });
 
