@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body>
+    <nav><img class="logo" src="logo.png" alt="Logo">
+      <form class="login" action="./api/v1/users/login" method="post">
+        <input class="login__input login__input--user" type="text" name="username" placeholder="username">
+        <input class="login__input login__input--pin" type="password" name="password" placeholder="password">
+        <button id="loginButton">Log in</button>
+      </form>
+    </nav>
+    <p class="welcome">Welcome to Music Website</p>
+  </body>
+</html>
