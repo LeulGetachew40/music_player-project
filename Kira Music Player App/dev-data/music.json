@@ -3,90 +3,90 @@
     "title": "Man in the Mirror",
     "artist": "Michael Jackson",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "./../songs/14 Michael Jackson - Man in the Mirror (Remastered Version).mp3"
   },
   {
     "title": "Georgia on my mind",
     "artist": "Ray Charles",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "./../songs/01 Ray Charles - Georgia On My Mind.mp3"
   },
   {
     "title": "La Vie en Rose",
     "artist": "Louis Armstrong",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
-  },
-  {
-    "title": "Rick Astley",
-    "artist": "Never Gonna Give You Up",
-    "datePublished": "1999-08-19",
-    "address": "./../songs"
-  },
-  {
-    "title": "Yesterday",
-    "artist": "The Beatles",
-    "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "./../songs/01 Louis Armstrong - La Vie en Rose.mp3"
   },
   {
     "title": "Can't Help Falling In Love",
     "artist": "Elvis Presley",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/11 Elvis Presley - Can't Help Falling In Love.mp3"
   },
   {
     "title": "Sweet Caroline",
     "artist": "Neil Diamond",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/16 Neil Diamond - Sweet Caroline.mp3"
   },
   {
     "title": "Hurt",
     "artist": "Johnny Cash",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/02 Johnny Cash - Hurt.mp3"
   },
   {
     "title": "Save Me",
     "artist": "Jelly Roll",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/Jelly Roll - Save Me.mp3"
   },
   {
     "title": "Always Forever",
     "artist": "Cults",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/03 cults - Always Forever.mp3"
   },
   {
     "title": "Pope is a Rockstar",
     "artist": "Sales",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/06 Sales - Pope Is a Rockstar.mp3"
   },
   {
     "title": "Mirrors",
     "artist": "Justin Timberlake",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/Justin Timberlake - Mirrors.mp3"
   },
   {
     "title": "I Just Called to Say I Love You",
     "artist": "Stevie Wonder",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/Stevie Wonder - I Just Called To Say I Love You.mp3"
   },
   {
     "title": "Against All Odds",
     "artist": "2Pac",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/2Pac - Against All Odds.mp3"
   },
   {
     "title": "Mama Said Knock You Out",
     "artist": "LL Cool J",
     "datePublished": "1999-08-19",
-    "address": "./../songs"
+    "address": "../../../songs/11 LL Cool J - Mama Said Knock You Out.mp3"
+  },
+  {
+    "title": "Never Gonna Give You Up",
+    "artist": "Rick Astley",
+    "datePublished": "1999-08-19",
+    "address": "../../../songs/Rick Astley - Never Gonna Give You Up.mp3"
+  },
+  {
+    "title": "Yesterday",
+    "artist": "The Beatles",
+    "datePublished": "1999-08-19",
+    "address": "../../../songs/11 The Beatles - Yesterday (Remastered 2015).mp3"
   }
 ]
