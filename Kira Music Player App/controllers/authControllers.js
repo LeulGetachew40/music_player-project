@@ -16,7 +16,6 @@ const login = catchAsync(async (req, res, next) => {
   }
 
   req.session.user = user;
-  console.log(req.session.user);
   req.session.isAuth = true;
   res.status(200).redirect(`./${user.username}`);
 });
@@ -24,6 +23,7 @@ const login = catchAsync(async (req, res, next) => {
 const protectRoute = catchAsync(async (req, res, next) => {
   let accessingUser;
   if (req.session.user) {
+    console.log("inside protectRoute line 26");
     accessingUser = await User.findOne({
       username: req.session.user.username,
     });
@@ -32,6 +32,7 @@ const protectRoute = catchAsync(async (req, res, next) => {
     return next(new AppError(401, "User is logged out"));
   }
   req.user = accessingUser;
+  console.log(accessingUser, "22222222222222222222222222222222222222");
   next();
 });
 

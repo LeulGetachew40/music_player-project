@@ -1,5 +1,4 @@
-const image = document.getElementById("cover"),
-  title = document.getElementById("music-title"),
+const title = document.getElementById("music-title"),
   artist = document.getElementById("music-artist"),
   currentTimeEl = document.getElementById("current-time"),
   durationEl = document.getElementById("duration"),
@@ -11,27 +10,33 @@ const image = document.getElementById("cover"),
   background = document.getElementById("bg-img");
 
 const music = new Audio();
-console.log(localStorage.getItem("user"));
-const songs = [
-  {
-    path: "../assets/1.mp3",
-    displayName: "The Charmer's Call",
-    cover: "assets/1.jpg",
-    artist: "Hanu Dixit",
-  },
-  {
-    path: "../assets/2.mp3",
-    displayName: "You Will Never See Me Coming",
-    cover: "assets/2.jpg",
-    artist: "NEFFEX",
-  },
-  {
-    path: "../assets/3.mp3",
-    displayName: "Intellect",
-    cover: "assets/3.jpg",
-    artist: "Yung Logos",
-  },
-];
+
+// const songs = [
+//   {
+//     path: "../assets/1.mp3",
+//     displayName: "The Charmer's Call",
+//     cover: "assets/1.jpg",
+//     artist: "Hanu Dixit",
+//   },
+//   {
+//     path: "../assets/2.mp3",
+//     displayName: "You Will Never See Me Coming",
+//     cover: "assets/2.jpg",
+//     artist: "NEFFEX",
+//   },
+//   {
+//     path: "../assets/3.mp3",
+//     displayName: "Intellect",
+//     cover: "assets/3.jpg",
+//     artist: "Yung Logos",
+//   },
+// ];
+
+async function getAllUsersSongs() {
+  const response = await fetch(`${window.location.href}/songs`);
+  const data = await response.json();
+  return data.songs;
+}
 
 let musicIndex = 0;
 let isPlaying = false;
@@ -63,8 +68,9 @@ function pauseMusic() {
 }
 
 function loadMusic(song) {
-  music.src = song.path;
-  title.textContent = song.displayName;
+  music.src = song.address;
+  console.log(song.address);
+  title.textContent = song.title;
   artist.textContent = song.artist;
 }
 
@@ -101,4 +107,26 @@ music.addEventListener("ended", () => changeMusic(1));
 music.addEventListener("timeupdate", updateProgressBar);
 playerProgress.addEventListener("click", setProgressBar);
 
-loadMusic(songs[musicIndex]);
+let songs;
+getAllUsersSongs()
+  .then((data) => {
+    songs = data;
+    const tbody = document.querySelector("#music__list");
+    songs.forEach((song, index) => {
+      const tr = `<tr class="music__interest__body"><td class="music__interest__body">${
+        index + 1
+      }</td><td class="music__interest__body">${
+        song.title
+      }</td><td class="music__interest__body">${new Date(
+        song.datePublished
+      ).toLocaleDateString(
+        "en-US"
+      )}</td><td class="music__interest__body"><button>Add</button><button>Remove
+      </button></td></tr>`;
+      tbody.innerHTML += tr;
+    });
+    loadMusic(songs[musicIndex]);
+  })
+  .catch((err) => {
+    console.log(err);
+  });

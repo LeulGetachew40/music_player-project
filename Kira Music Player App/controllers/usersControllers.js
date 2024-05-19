@@ -18,8 +18,17 @@ const getAllUsers = catchAsync(async function (req, res, next) {
   res.status(200).json({ allUsers });
 });
 
+const getUserAllSongs = catchAsync(async function (req, res, next) {
+  const user = await User.findOne({ username: req.user.username }).populate(
+    "musicInterests"
+  );
+  const songs = user.musicInterests;
+  res.status(200).json({ songs });
+});
+
 module.exports = {
   createUser,
   getHomePage,
   getAllUsers,
+  getUserAllSongs,
 };
